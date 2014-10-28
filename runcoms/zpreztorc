@@ -34,20 +34,19 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'archive' \
-  'emacs' \
   'git' \
   'gpg' \
-  'haskell' \
   'history' \
   'history-substring-search' \
   'homebrew' \
-  'node' \
   'osx' \
   'pacman' \
   'python' \
   'ssh' \
   'syntax-highlighting' \
-  'tmux'
+  'tmux' \
+  'rsync' \
+  'ruby'
 
 #
 # Editor
