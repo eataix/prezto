@@ -30,13 +30,13 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
+  'gnu-utility' \
   'utility' \
   'completion' \
   'prompt' \
   'archive' \
   'git' \
   'gpg' \
-  'history' \
   'history-substring-search' \
   'homebrew' \
   'osx' \
