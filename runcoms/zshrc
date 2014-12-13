@@ -14,14 +14,13 @@ fi
 
 export LANG=en_AU.UTF-8
 
-. `brew --prefix`/etc/profile.d/z.sh
-
 # Base16 Shell
 #BASE16_SCHEME="solarized"
 BASE16_SHELL="$HOME/.config/base16-shell/base16-solarized.light.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 export GOPATH=$HOME/go
+export GOROOT=/usr/lib/go
 export PATH=$PATH:$GOPATH/bin
 
 export PATH=$PATH:$HOME/bin
@@ -50,10 +49,14 @@ export LESS_TERMCAP_md="${yellow}";
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
 
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto";
-
 export MANWIDTH=80
+. ~/utils/z/z.sh
 
 export GOROOT=$HOME/source/go
 export PATH=$GOROOT/bin:$PATH
+
+eval "$(hub alias -s)"
+
+
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
