@@ -18,7 +18,7 @@ export LANG=en_AU.UTF-8
 
 # Base16 Shell
 #BASE16_SCHEME="solarized"
-BASE16_SHELL="$HOME/.config/base16-shell/base16-atelierdune.light.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-solarized.light.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 export GOPATH=$HOME/go
@@ -54,3 +54,6 @@ export MANPAGER="less -X";
 export GREP_OPTIONS="--color=auto";
 
 export MANWIDTH=80
+
+export GOROOT=$HOME/source/go
+export PATH=$GOROOT/bin:$PATH
